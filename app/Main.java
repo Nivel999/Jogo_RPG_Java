@@ -1,10 +1,21 @@
 package app;
-import personagens.Heroi;
-import java.util.Scanner;
+import personagens.herois.Guerreiro;
+import personagens.herois.Mago;
+import personagens.inimigos.Inimigo;
+
+
 
 public class Main{
     public static void main(String[] args) {
-        
-        Heroi heroi = new Heroi(string a);       
+        //Criação dos objetos
+        Mago mago = new Mago();
+        Guerreiro heroi = new Guerreiro();
+        Inimigo inimigo = new Inimigo();
+
+
+        heroi.atacar();
+        inimigo.atacar();
+        mago.atacar();
+              
     }
 }
