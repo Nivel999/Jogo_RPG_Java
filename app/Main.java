@@ -3,7 +3,7 @@ import personagens.herois.Arqueiro;
 import personagens.herois.Guerreiro;
 import personagens.herois.Mago;
 import personagens.herois.Personagem;
-import personagens.inimigos.Inimigo;
+import personagens.inimigos.Kraken;
 
 
 
@@ -14,15 +14,20 @@ public class Main{
         Arqueiro arqueiro = new Arqueiro();
         Mago mago = new Mago();
         Guerreiro heroi = new Guerreiro();
-        Inimigo inimigo = new Inimigo();
+        Kraken inimigo = new Kraken();
         
 
 
         heroi.atacar();
-        inimigo.atacar();
-        mago.atacar();
-        arqueiro.atacar();
-        personagem.setTipoClasse(13);
+        inimigo.golpeDeTentaculo();
+        mago.boladefogo();
+        arqueiro.ataqueFlecha();
+        arqueiro.precisao();
+        arqueiro.ataqueFlecha();
+        arqueiro.ataqueMulti();
+        
+        personagem.TipoClasse(1, "da");
+
               
     }
 }
