@@ -1,24 +1,32 @@
 package personagens.herois;
 
 public class Personagem {
-    int TipoClasse;
-    String nome;
+    private int TipoClasse;
+    private String nome;
 
-    public int TipoClasse(int TipoClasse, String nome) {
-        switch (TipoClasse) {
+    public int setTipoClasse(int TipoClasse) {
+        this.TipoClasse = TipoClasse;
+        
+        switch (this.TipoClasse) {
             case 1:
-                System.out.printf("%s você é um guerreiro", nome);
-                TipoClasse = 1;
-
-                break;
+                System.out.println("você é um Arqueiro ");
+                return TipoClasse;
             case 2:
-                System.out.println("Você é Mago");
-                break;
+                System.out.println("você é um Guerreiro ");
+                return TipoClasse;
+            case 3:
+                System.out.println("você é um Mago ");
+                return TipoClasse;
             default:
-                System.out.println("Não é nada");
+                System.out.println("Opção inválida");
+                return TipoClasse;
         }
+    }
 
-        return TipoClasse;
+    public String setNome(String nome){
+        this.nome = nome;
+        System.out.println("Seu nome é " + nome);
+        return nome;
     }
 
 }

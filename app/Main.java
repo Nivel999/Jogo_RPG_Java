@@ -1,10 +1,11 @@
 package app;
+
+import java.util.Scanner;
 import personagens.herois.Arqueiro;
 import personagens.herois.Guerreiro;
 import personagens.herois.Mago;
 import personagens.herois.Personagem;
-import personagens.inimigos.Kraken;
-
+import personagens.inimigos.*;
 
 
 public class Main{
@@ -13,20 +14,25 @@ public class Main{
         Personagem personagem = new Personagem();
         Arqueiro arqueiro = new Arqueiro();
         Mago mago = new Mago();
-        Guerreiro heroi = new Guerreiro();
-        Kraken inimigo = new Kraken();
+        Guerreiro guerreiro = new Guerreiro();
+        Kraken Kraken = new Kraken();
+
+        Scanner scanner = new Scanner(System.in);
         
 
 
-        heroi.atacar();
-        inimigo.golpeDeTentaculo();
+        guerreiro.atacar();
+        Kraken.golpeDeTentaculo();
         mago.boladefogo();
         arqueiro.ataqueFlecha();
         arqueiro.precisao();
         arqueiro.ataqueFlecha();
         arqueiro.ataqueMulti();
         
-        personagem.TipoClasse(1, "da");
+        int setTipoClasse = scanner.nextInt();
+        personagem.setTipoClasse(setTipoClasse);
+        personagem.setNome("Baltazar");
+        
 
               
     }
