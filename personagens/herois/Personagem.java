@@ -23,10 +23,17 @@ public class Personagem {
         }
     }
 
+    public int getTipoClasse(){
+        return this.TipoClasse;
+    }
+
     public String setNome(String nome){
         this.nome = nome;
-        System.out.println("Seu nome é " + nome);
         return nome;
+    }
+
+    public String getNome(){
+        return this.nome;
     }
 
 }
