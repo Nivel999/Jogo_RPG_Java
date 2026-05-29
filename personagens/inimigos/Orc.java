@@ -3,7 +3,7 @@ package personagens.inimigos;
 public class Orc extends Inimigo {
 
     public Orc() {
-        super(120, 15, 3000);
+        super(200, 20, 3500);
     }
 
     // Métodos de ataque

@@ -3,11 +3,15 @@ package personagens.inimigos;
 public class Goblin extends Inimigo {
 
     public Goblin() {
-        super(120, 15, 3000);
+        super(1200, 20, 3500);
     }
 
     // Métodos de ataque
-    public void atacar() {
+    public int atacar() {
         System.out.println("Goblin ataca com força: " + getForca());
+        return getForca();
     }
+
+
 }
+

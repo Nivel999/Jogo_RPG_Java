@@ -3,7 +3,7 @@ package personagens.inimigos;
 public class Kraken extends Inimigo {
 
     public Kraken() {
-        super(500, 20, 30000);
+        super(5000, 20, 30000);
     }
 
     //habilidades

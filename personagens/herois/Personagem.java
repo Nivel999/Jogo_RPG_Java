@@ -4,6 +4,21 @@ public class Personagem {
 
     private int TipoClasse;
     private String nome;
+    protected int hp;
+    protected int forca;
+    protected int baseHp;
+    protected int baseForca;
+    protected int xp;
+    protected int level;
+
+    public Personagem(int xp, int level, int forca, int hp) {
+        this.xp = xp;
+        this.level = level;
+        this.forca = forca;
+        this.hp = hp;
+        this.baseHp = hp;
+        this.baseForca = forca;
+    }
 
     public int setTipoClasse(int TipoClasse) {
         this.TipoClasse = TipoClasse;
@@ -37,9 +52,12 @@ public class Personagem {
         return this.nome;
     }
 
-    public void getReceberDano(int dano) {
-        {
-            System.out.println(nome + " recebeu " + dano + " de dano!");
-        }
+    public int getHp() {
+        return hp;
+    }
+
+    public void receberDano(int danoInimigo) {
+        hp -= danoInimigo;
+        System.out.println("O heroi " + nome + " recebeu " + danoInimigo + " de dano! HP restante: " + hp);
     }
 }
